@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+.clockbox{
+    display: flex;
+    padding: 20px;
+    color: #fff;
+}
+.clockbox .time{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 0 10px;
+    font-size: 100px;
+    width: 490px;
+    
+}
+.clockbox .time .sE{
+    color: #000;
+
+}
+.clockbox .date{
+    display: flex;
+    flex-direction: column;
+    color: #FF00CC;
+    font-size: 30px;
+    border:1px solid #fff;
+    border-left: none;
+    padding: 0 10px;
+
+}
+.colon{
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
